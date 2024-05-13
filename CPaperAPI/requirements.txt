@@ -1,0 +1,4 @@
+peft
+fastapi
+uvicorn
+sse-starlette
