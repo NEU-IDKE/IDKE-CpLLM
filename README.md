@@ -54,3 +54,5 @@
 ----
 
 `CPaperAPI`更新了依赖项`sse-starlette`，用于流传输
+
+* 新增协作者
