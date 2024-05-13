@@ -4,18 +4,18 @@ def parsers():
     parser = argparse.ArgumentParser(description='C Paper UI')
     parser.add_argument('--model_path', type=dict, default={
         '基于C语言文本内容': {
-            '选择题': '# http://127.0.0.1:8000/',
-            '填空题': '# http://127.0.0.1:8001/',
-            '算法题': '# http://127.0.0.1:8002/',
-            '实际应用题': '# http://127.0.0.1:8003/'
+            '选择题': 'https://u252464-bdad-52da5de2.westb.seetacloud.com:8443/',
+            '填空题': 'https://u252464-bdad-52da5de2.westb.seetacloud.com:8443/',
+            '算法题': 'https://u252464-bdad-52da5de2.westb.seetacloud.com:8443/',
+            '实际应用题': 'https://u252464-bdad-52da5de2.westb.seetacloud.com:8443/'
         },
         '基于已有的题目': {
-            '选择题': '# http://127.0.0.1:8004/',
-            '填空题': '# http://127.0.0.1:8005/',
-            '算法题': '# http://127.0.0.1:8006/',
-            '实际应用题': '# http://127.0.0.1:8007/'
+            '选择题': 'https://u252464-bdad-52da5de2.westb.seetacloud.com:8443/',
+            '填空题': 'https://u252464-bdad-52da5de2.westb.seetacloud.com:8443/',
+            '算法题': 'https://u252464-bdad-52da5de2.westb.seetacloud.com:8443/',
+            '实际应用题': 'https://u252464-bdad-52da5de2.westb.seetacloud.com:8443/'
         },
-        '对话模型': '# http://127.0.0.1:8008/'
+        '对话模型': 'https://u252464-bdad-52da5de2.westb.seetacloud.com:8443/'
     }, help='各模型接口地址，最后记得加/')
     parser.add_argument('--system_prompt', type=dict, default={
         '基于C语言文本内容': {
