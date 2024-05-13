@@ -198,12 +198,12 @@ def chat_page():
         st.session_state.messages.append({"role": "assistant", "content": response})
 
 # 设置网页标题
-st.set_page_config(page_title="IDKE-LLM", page_icon="👨‍💻")
+st.set_page_config(page_title="IDKE-CPLLM", page_icon="👨‍💻")
 
 # 设置侧栏
 with st.sidebar:
     selected = option_menu(
-        "  👨‍💻 C语言出卷系统",
+        "  👨‍💻 C语言大模型",
         ["使用介绍", "试卷一键生成", "出题工具包","对话交互"],
         icons=["bi bi-book", "bi bi-chat-left-dots", "bi bi-brightness-alt-high", "bi bi-robot"],
         menu_icon="bi bi-arrow-right",
