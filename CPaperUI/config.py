@@ -45,8 +45,8 @@ def parsers():
             '实际应用题': '请将该题目转化成实际应用题：'
         }
     }, help='各题型输入prompt前的一些提示语句')
-    parser.add_argument('--save_doc_path', type=str, default='./output/C_paper.docx', help='导出的word存储路径')
-    parser.add_argument('--save_csv_path', type=str, default='./output/C_paper.csv', help='导出的csv存储路径')
+    parser.add_argument('--save_doc_path', type=str, default='output/C_paper.docx', help='导出的word存储路径')
+    parser.add_argument('--save_csv_path', type=str, default='output/C_paper.csv', help='导出的csv存储路径')
     parser.add_argument('--contents_path', type=str, default='../CPaperDB/contents/', help='C语言教材资料路径')
     parser.add_argument('--papers_path', type=str, default='../CPaperDB/papers/', help='C语言试卷题目路径')
     args = parser.parse_args()
