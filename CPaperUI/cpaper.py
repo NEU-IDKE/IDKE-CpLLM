@@ -5,6 +5,7 @@ from streamlit_option_menu import option_menu
 from io import StringIO
 from config import parsers
 from utils import get_response, get_stream_response, save_to_doc, save_to_csv, get_files
+import os
 
 temperature = 0.7
 top_k = 3
@@ -55,8 +56,8 @@ def paper_gen_page():
         question_num['算法题'] = st.slider('📄算法题数量', 0, 10, 2)
         question_num['实际应用题'] = st.slider('📄实际应用题数量', 0, 10, 2)
 
-    
-    with open('output/C_paper.docx', 'r',encoding='utf-8') as file:
+    st.write(os.listdir(os.getcwd()))
+    with open(os.getcwd() + 'output/C_paper.docx', 'r',encoding='utf-8') as file:
         # 逐行读取内容
         for line in file:
             st.text(line)
