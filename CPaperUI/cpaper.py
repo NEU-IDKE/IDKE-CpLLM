@@ -54,9 +54,13 @@ def paper_gen_page():
         question_num['填空题'] = st.slider('📄填空题数量', 0, 10, 2)
         question_num['算法题'] = st.slider('📄算法题数量', 0, 10, 2)
         question_num['实际应用题'] = st.slider('📄实际应用题数量', 0, 10, 2)
-
+    with open('./output/C_paper.docx', 'r',encoding='utf-8') as file:
+        # 逐行读取内容
+        for line in file:
+            st.text(line)
+                
     st.subheader('📑 知识点选择')
-
+    
     chapter = {
         '第一章': '第1章 基本概念',
         '第二章': '第2章 运算符与表达式',
